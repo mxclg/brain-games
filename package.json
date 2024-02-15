@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/mxclg/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/mxclg/frontend-project-44/actions)",
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
   },
   "main": "brain-games.js",
   "scripts": {
