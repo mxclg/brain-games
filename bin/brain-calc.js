@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import isCorrectResultExpression from '../src/games/brain-calc-logic.js';
+import runBrainCalc from '../src/games/brain-calc-logic.js';
 
-isCorrectResultExpression();
+runBrainCalc();
