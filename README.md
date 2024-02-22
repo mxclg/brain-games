@@ -4,3 +4,4 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/d4fdb4fc99f3da9aa774/maintainability)](https://codeclimate.com/github/mxclg/frontend-project-44/maintainability)
 
 brain-even demo.cast: https://asciinema.org/a/dsASN6m8mD2nDGTYhxPAUuXLB
+brain-calc demo-cast: https://asciinema.org/a/XwIsJuT583e8lbYh6cSJ45XJw
