@@ -7,7 +7,7 @@ const gameRules = () => 'What is the result of the expression?';
 const createTaskData = () => {
   // генерируем случаные числа для выражений
   const number1 = Math.floor(Math.random() * 100);
-  const number2 = Math.floor(number1 / 10);
+  const number2 = Math.floor(Math.random() * 100);
 
   // массив со знаками для выражений
   const operations = ['-', '+', '*'];
