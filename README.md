@@ -6,3 +6,4 @@
 // brain-even demo.cast: https://asciinema.org/a/dsASN6m8mD2nDGTYhxPAUuXLB
 // brain-calc demo-cast: https://asciinema.org/a/XwIsJuT583e8lbYh6cSJ45XJw
 // brain-gcd demo-cast: https://asciinema.org/a/eNmqSDXLhzWKtZ4lGPDgIpGrI
+// brain-progression demo-cast: https://asciinema.org/a/MTyLAGlRhcWnQrUlqacjaR8yB
