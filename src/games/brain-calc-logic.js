@@ -1,5 +1,5 @@
 import gameEngine from '../index.js';
-import { getRandomFromOneToHundred } from '../randomNumbers.js';
+import { getRandomFromOneToHundred, getRandomFromOneToQuarter } from '../randomNumbers.js';
 
 // правила игры
 const gameRules = () => 'What is the result of the expression?';
@@ -8,7 +8,7 @@ const gameRules = () => 'What is the result of the expression?';
 const createTaskData = () => {
   // генерируем случаные числа для выражений
   const number1 = getRandomFromOneToHundred();
-  const number2 = getRandomFromOneToHundred();
+  const number2 = getRandomFromOneToQuarter();
 
   // массив со знаками для выражений
   const operations = ['-', '+', '*'];
