@@ -1,4 +1,5 @@
 import gameEngine from '../index.js';
+import { getRandomFromTwoToHundred } from '../randomNumbers.js';
 
 // правила игры
 const gameRules = () => 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -16,7 +17,7 @@ const isPrime = (number) => {
 // создание данных для игры
 const createTaskData = () => {
   // генерируем случайное число от 2 до 100
-  const randomNumber = Math.floor((Math.random() * 99) + 2);
+  const randomNumber = getRandomFromTwoToHundred();
 
   // формируем вопрос для пользователя
   const askQuestion = `Question: ${randomNumber}`;

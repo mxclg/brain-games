@@ -1,4 +1,5 @@
 import gameEngine from '../index.js';
+import { getRandomFromOneToHundred } from '../randomNumbers.js';
 
 // правила игры
 const gameRules = () => 'Find the greatest common divisor of given numbers.';
@@ -6,8 +7,8 @@ const gameRules = () => 'Find the greatest common divisor of given numbers.';
 // создание данных для игры
 const createTaskData = () => {
   // генерируем случайные числа для выражений
-  let number1 = Math.floor(Math.random() * 100);
-  let number2 = Math.floor(Math.random() * 100);
+  let number1 = getRandomFromOneToHundred();
+  let number2 = getRandomFromOneToHundred();
 
   // формируем вопрос со сгенерированными числами
   const askQuestion = `Question: ${number1} ${number2}`;

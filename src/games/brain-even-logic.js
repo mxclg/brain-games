@@ -1,4 +1,5 @@
 import gameEngine from '../index.js';
+import { getRandomFromOneToHundred } from '../randomNumbers.js';
 
 // правила игры
 const gameRules = () => 'Answer "yes" if the number is even, otherwise answer "no".';
@@ -9,7 +10,7 @@ const isEven = (randomNumber) => randomNumber % 2 === 0;
 // создание данных для игры
 const createTaskData = () => {
   // генерируем случайное число от 1 до 100
-  const randomNumber = Math.floor((Math.random() * 100) + 1);
+  const randomNumber = getRandomFromOneToHundred();
 
   // формируем вопрос для пользователя
   const askQuestion = `Question: ${randomNumber}`;

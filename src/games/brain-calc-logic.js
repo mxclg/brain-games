@@ -1,4 +1,5 @@
 import gameEngine from '../index.js';
+import { getRandomFromOneToHundred } from '../randomNumbers.js';
 
 // правила игры
 const gameRules = () => 'What is the result of the expression?';
@@ -6,8 +7,8 @@ const gameRules = () => 'What is the result of the expression?';
 // создание данных для игры
 const createTaskData = () => {
   // генерируем случаные числа для выражений
-  const number1 = Math.floor(Math.random() * 100);
-  const number2 = Math.floor(Math.random() * 100);
+  const number1 = getRandomFromOneToHundred();
+  const number2 = getRandomFromOneToHundred();
 
   // массив со знаками для выражений
   const operations = ['-', '+', '*'];

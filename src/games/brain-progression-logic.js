@@ -1,4 +1,5 @@
 import gameEngine from '../index.js';
+import { getRandomFromOneToQuarter } from '../randomNumbers.js';
 
 // правила игры
 const gameRules = () => 'What number is missing in the progression?';
@@ -6,8 +7,8 @@ const gameRules = () => 'What number is missing in the progression?';
 // создание данных для игры
 const createTaskData = () => {
   // генерируем случаные числа для первого числа и шага в прогрессии
-  const randomStartNumber = Math.floor((Math.random() * 25) + 1);
-  const randomStepCount = Math.floor((Math.random() * 25) + 1);
+  const randomStartNumber = getRandomFromOneToQuarter();
+  const randomStepCount = getRandomFromOneToQuarter();
 
   // опеределяем начало и шаг прогрессии
   const startValue = randomStartNumber;
