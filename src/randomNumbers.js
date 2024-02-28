@@ -5,4 +5,4 @@ export const getRandomFromOneToHundred = () => Math.floor((Math.random() * 100) 
 export const getRandomFromTwoToHundred = () => Math.floor((Math.random() * 99) + 2);
 
 // генерирует числа от 1 до 25
-export const getRandomFromOneToQuarter = () => Math.floor((Math.random() * 25) + 1); 
+export const getRandomFromOneToQuarter = () => Math.floor((Math.random() * 25) + 1);
