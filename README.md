@@ -7,3 +7,4 @@
 // brain-calc demo-cast: https://asciinema.org/a/XwIsJuT583e8lbYh6cSJ45XJw
 // brain-gcd demo-cast: https://asciinema.org/a/eNmqSDXLhzWKtZ4lGPDgIpGrI
 // brain-progression demo-cast: https://asciinema.org/a/MTyLAGlRhcWnQrUlqacjaR8yB
+// brain-prime demo-cast: https://asciinema.org/a/7TrYSxdxIfb9O3PN5PejLt8n1
