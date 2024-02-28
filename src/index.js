@@ -19,7 +19,10 @@ const gameEngine = (gameRules, createTaskData) => {
     console.log(askQuestion);
 
     // получаем ответ от пользователя
-    const userAnswer = readlineSync.question('Your answer: ');
+    /* приводим ответ к нижнему регистру на случай, если пользователь,
+    играя в brain-even или brain-prime будет отвечать правильно,
+    но использовать большие буквы: No, YES, nO - итд */
+    const userAnswer = readlineSync.question('Your answer: ').toLowerCase();
 
     // сравниваем ответы
     if (userAnswer === rightAnswer) {
