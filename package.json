@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "type": "module",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/mxclg/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/mxclg/frontend-project-44/actions)",
+  "description": "Проект «Игры Разума» – пять консольных игр. Каждая игра задает вопрос. Для прохождения игры, нужно дать три правильных ответа подряд.",
   "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
@@ -11,7 +11,7 @@
     "brain-progression": "bin/brain-progression.js",
     "brain-prime": "bin/brain-prime.js"
   },
-  "main": "brain-games.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
