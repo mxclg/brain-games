@@ -1,7 +1,7 @@
 import gameEngine from '../index.js';
 import getRandomNumber from '../randomNumber.js';
 
-const gameRules = () => 'What number is missing in the progression?';
+const gameRules = 'What number is missing in the progression?';
 
 const createTaskData = () => {
   const randomStartNumber = getRandomNumber(1, 25);
@@ -38,4 +38,8 @@ const createTaskData = () => {
   return [askQuestion, resultStr];
 };
 
-export default () => gameEngine(gameRules, createTaskData);
+const brainProgression = () => {
+  gameEngine(gameRules, createTaskData);
+};
+
+export default brainProgression;

@@ -1,7 +1,7 @@
 import gameEngine from '../index.js';
 import getRandomNumber from '../randomNumber.js';
 
-const gameRules = () => 'What is the result of the expression?';
+const gameRules = 'What is the result of the expression?';
 
 const createTaskData = () => {
   const number1 = getRandomNumber(2, 100);
@@ -28,4 +28,8 @@ const createTaskData = () => {
   return [askQuestion, resultStr];
 };
 
-export default () => gameEngine(gameRules, createTaskData);
+const brainCalc = () => {
+  gameEngine(gameRules, createTaskData);
+};
+
+export default brainCalc;

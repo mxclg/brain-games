@@ -1,7 +1,7 @@
 import gameEngine from '../index.js';
 import getRandomNumber from '../randomNumber.js';
 
-const gameRules = () => 'Find the greatest common divisor of given numbers.';
+const gameRules = 'Find the greatest common divisor of given numbers.';
 
 const createTaskData = () => {
   let number1 = getRandomNumber(2, 100);
@@ -33,4 +33,8 @@ const createTaskData = () => {
   return [askQuestion, resultStr];
 };
 
-export default () => gameEngine(gameRules, createTaskData);
+const brainGcd = () => {
+  gameEngine(gameRules, createTaskData);
+};
+
+export default brainGcd;

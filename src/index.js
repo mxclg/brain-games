@@ -5,8 +5,7 @@ const gameEngine = (gameRules, createTaskData) => {
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
 
-  const explainGameRules = gameRules();
-  console.log(explainGameRules);
+  console.log(gameRules);
 
   let correctAnswersCount = 0;
   while (correctAnswersCount < 3) {
@@ -25,7 +24,7 @@ const gameEngine = (gameRules, createTaskData) => {
       return console.log(`Let's try again, ${userName}!`);
     }
   }
-  console.log(`Congratulations, ${userName}!`);
+  return console.log(`Congratulations, ${userName}!`);
 };
 
 export default gameEngine;

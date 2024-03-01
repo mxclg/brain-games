@@ -1,7 +1,7 @@
 import gameEngine from '../index.js';
 import getRandomNumber from '../randomNumber.js';
 
-const gameRules = () => 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const gameRules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (number) => {
   for (let divider = 2; divider <= number / 2; divider += 1) {
@@ -28,4 +28,8 @@ const createTaskData = () => {
   return [askQuestion, resultStr];
 };
 
-export default () => gameEngine(gameRules, createTaskData);
+const brainPrime = () => {
+  gameEngine(gameRules, createTaskData);
+};
+
+export default brainPrime;
