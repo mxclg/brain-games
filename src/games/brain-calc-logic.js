@@ -9,7 +9,7 @@ const createTaskData = () => {
 
   const operations = ['-', '+', '*'];
 
-  const randomIndex = Math.floor(Math.random() * operations.length);
+  const randomIndex = getRandomNumber(0, operations.length - 1);
   const randomOperationIndex = operations[randomIndex];
 
   const askQuestion = `Question: ${number1} ${randomOperationIndex} ${number2}`;
