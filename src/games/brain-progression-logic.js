@@ -1,11 +1,11 @@
 import gameEngine from '../index.js';
-import { getRandomFromOneToQuarter } from '../randomNumbers.js';
+import getRandomNumber from '../randomNumber.js';
 
 const gameRules = () => 'What number is missing in the progression?';
 
 const createTaskData = () => {
-  const randomStartNumber = getRandomFromOneToQuarter();
-  const randomStepCount = getRandomFromOneToQuarter();
+  const randomStartNumber = getRandomNumber(1, 25);
+  const randomStepCount = getRandomNumber(1, 25);
 
   const startValue = randomStartNumber;
   const step = randomStepCount;

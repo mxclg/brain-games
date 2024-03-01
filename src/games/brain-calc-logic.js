@@ -1,11 +1,11 @@
 import gameEngine from '../index.js';
-import { getRandomFromOneToHundred, getRandomFromOneToQuarter } from '../randomNumbers.js';
+import getRandomNumber from '../randomNumber.js';
 
 const gameRules = () => 'What is the result of the expression?';
 
 const createTaskData = () => {
-  const number1 = getRandomFromOneToHundred();
-  const number2 = getRandomFromOneToQuarter();
+  const number1 = getRandomNumber(2, 100);
+  const number2 = getRandomNumber(2, 25);
 
   const operations = ['-', '+', '*'];
 

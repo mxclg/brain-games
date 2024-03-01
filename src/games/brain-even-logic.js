@@ -1,12 +1,12 @@
 import gameEngine from '../index.js';
-import { getRandomFromOneToHundred } from '../randomNumbers.js';
+import getRandomNumber from '../randomNumber.js';
 
 const gameRules = () => 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const isEven = (randomNumber) => randomNumber % 2 === 0;
 
 const createTaskData = () => {
-  const randomNumber = getRandomFromOneToHundred();
+  const randomNumber = getRandomNumber();
 
   const askQuestion = `Question: ${randomNumber}`;
 
