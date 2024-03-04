@@ -12,19 +12,14 @@ const isPrime = (number) => {
   return true;
 };
 
+const isPrimeResult = (randomNumber) => (isPrime(randomNumber) === true ? 'yes' : 'no');
+
 const createTaskData = () => {
   const randomNumber = getRandomNumber(2, 100);
 
   const askQuestion = `Question: ${randomNumber}`;
 
-  let result = '';
-  if (isPrime(randomNumber) === true) {
-    result = 'yes';
-  } else {
-    result = 'no';
-  }
-
-  const resultStr = result.toString();
+  const resultStr = isPrimeResult(randomNumber).toString();
   return [askQuestion, resultStr];
 };
 
