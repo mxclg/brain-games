@@ -3,29 +3,26 @@ import getRandomNumber from '../randomNumber.js';
 
 const gameRules = 'What number is missing in the progression?';
 
-const createTaskData = () => {
-  const randomStartNumber = getRandomNumber(1, 25);
-  const randomStepCount = getRandomNumber(1, 25);
-
-  const startValue = randomStartNumber;
-  const step = randomStepCount;
+const generateProgression = () => {
+  const startValue = getRandomNumber(1, 25);
+  const stepValue = getRandomNumber(1, 25);
 
   const progressionLength = 10;
   const progressionArray = [];
 
   for (let i = 0; i < progressionLength; i += 1) {
-    progressionArray.push(startValue + (step * i));
+    progressionArray.push(startValue + (stepValue * i));
   }
 
-  const randomArrayIndex = Math.floor(Math.random() * progressionArray.length);
+  const randomArrayIndex = getRandomNumber(0, progressionArray.length - 1);
 
   const hiddenElementArray = progressionArray.slice();
   hiddenElementArray[randomArrayIndex] = '..';
 
-  const separator = ' ';
-  const hiddenElementString = hiddenElementArray.join(separator);
-  const askQuestion = `Question: ${hiddenElementString}`;
+  return [progressionArray, hiddenElementArray];
+};
 
+const getMissingElement = (progressionArray, hiddenElementArray) => {
   let missingElement;
   for (let i = 0; i < progressionArray.length; i += 1) {
     if (progressionArray[i] !== hiddenElementArray[i]) {
@@ -33,8 +30,16 @@ const createTaskData = () => {
       break;
     }
   }
+  return missingElement;
+};
 
-  const resultStr = missingElement.toString();
+const createTaskData = () => {
+  const [progressionArray, hiddenElementArray] = generateProgression();
+  const hiddenElementProgression = hiddenElementArray.join(' ');
+
+  const askQuestion = `Question: ${hiddenElementProgression}`;
+  const resultStr = getMissingElement(progressionArray, hiddenElementArray).toString();
+
   return [askQuestion, resultStr];
 };
 
