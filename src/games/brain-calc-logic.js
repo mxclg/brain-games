@@ -3,7 +3,7 @@ import getRandomNumber from '../randomNumber.js';
 
 const gameRules = 'What is the result of the expression?';
 
-const calculate = (number1, number2, randomOperationIndex) => {
+const calculateExpression = (number1, number2, randomOperationIndex) => {
   let result = 0;
 
   switch (randomOperationIndex) {
@@ -29,7 +29,7 @@ const createTaskData = () => {
 
   const askQuestion = `Question: ${number1} ${randomOperationIndex} ${number2}`;
 
-  const resultStr = calculate(number1, number2, randomOperationIndex).toString();
+  const resultStr = calculateExpression(number1, number2, randomOperationIndex).toString();
   return [askQuestion, resultStr];
 };
 

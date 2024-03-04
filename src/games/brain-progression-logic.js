@@ -16,16 +16,16 @@ const generateProgression = () => {
 
   const randomArrayIndex = getRandomNumber(0, progressionArray.length - 1);
 
-  const hiddenElementArray = progressionArray.slice();
-  hiddenElementArray[randomArrayIndex] = '..';
+  const hiddenElementInArray = progressionArray.slice();
+  hiddenElementInArray[randomArrayIndex] = '..';
 
-  return [progressionArray, hiddenElementArray];
+  return [progressionArray, hiddenElementInArray];
 };
 
-const getMissingElement = (progressionArray, hiddenElementArray) => {
+const getMissingElement = (progressionArray, hiddenElementInArray) => {
   let missingElement;
   for (let i = 0; i < progressionArray.length; i += 1) {
-    if (progressionArray[i] !== hiddenElementArray[i]) {
+    if (progressionArray[i] !== hiddenElementInArray[i]) {
       missingElement = progressionArray[i];
       break;
     }
@@ -34,11 +34,11 @@ const getMissingElement = (progressionArray, hiddenElementArray) => {
 };
 
 const createTaskData = () => {
-  const [progressionArray, hiddenElementArray] = generateProgression();
-  const hiddenElementProgression = hiddenElementArray.join(' ');
+  const [progressionArray, hiddenElementInArray] = generateProgression();
+  const hiddenElementProgression = hiddenElementInArray.join(' ');
 
   const askQuestion = `Question: ${hiddenElementProgression}`;
-  const resultStr = getMissingElement(progressionArray, hiddenElementArray).toString();
+  const resultStr = getMissingElement(progressionArray, hiddenElementInArray).toString();
 
   return [askQuestion, resultStr];
 };
