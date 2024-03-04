@@ -3,6 +3,21 @@ import getRandomNumber from '../randomNumber.js';
 
 const gameRules = 'What is the result of the expression?';
 
+const calculate = (number1, number2, randomOperationIndex) => {
+  let result = 0;
+
+  switch (randomOperationIndex) {
+    case '+': result = number1 + number2;
+      break;
+    case '-': result = number1 - number2;
+      break;
+    case '*': result = number1 * number2;
+      break;
+    default:
+  }
+  return result;
+};
+
 const createTaskData = () => {
   const number1 = getRandomNumber(2, 100);
   const number2 = getRandomNumber(2, 25);
@@ -14,17 +29,7 @@ const createTaskData = () => {
 
   const askQuestion = `Question: ${number1} ${randomOperationIndex} ${number2}`;
 
-  let result = 0;
-
-  if (randomOperationIndex === '+') {
-    result = number1 + number2;
-  } else if (randomOperationIndex === '-') {
-    result = number1 - number2;
-  } else if (randomOperationIndex === '*') {
-    result = number1 * number2;
-  }
-
-  const resultStr = result.toString();
+  const resultStr = calculate(number1, number2, randomOperationIndex).toString();
   return [askQuestion, resultStr];
 };
 
