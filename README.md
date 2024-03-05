@@ -36,6 +36,15 @@ git clone https://github.com/mxclg/frontend-project-44.git
 ```
 sudo npm link
 ```
+3. Каждая игра запускается отдельной командой:
+
+```
+brain-even
+brain-calc
+brain-gcd
+brain-progression
+brain-prime
+```
 ---
 ### Видео с демонстрацией каждой игры
 
