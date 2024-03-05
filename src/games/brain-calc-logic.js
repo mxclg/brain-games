@@ -4,18 +4,15 @@ import getRandomNumber from '../randomNumber.js';
 const gameRules = 'What is the result of the expression?';
 
 const calculateExpression = (number1, number2, randomOperationIndex) => {
-  let result = 0;
-
   switch (randomOperationIndex) {
-    case '+': result = number1 + number2;
-      break;
-    case '-': result = number1 - number2;
-      break;
-    case '*': result = number1 * number2;
-      break;
-    default:
+    case '+': return number1 + number2;
+
+    case '-': return number1 - number2;
+
+    case '*': return number1 * number2;
+
+    default: return null;
   }
-  return result;
 };
 
 const createTaskData = () => {
