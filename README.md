@@ -1,59 +1,66 @@
-### Hexlet tests and linter status
-
 [![Actions Status](https://github.com/mxclg/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/mxclg/frontend-project-44/actions)
-
-### Maintainability Badge
 [![Maintainability](https://api.codeclimate.com/v1/badges/d4fdb4fc99f3da9aa774/maintainability)](https://codeclimate.com/github/mxclg/frontend-project-44/maintainability)
-
 ---  
-# Проект «Игры Разума»
+# Brain games
+It's a set of five console games inspired by popular mobile brain-training apps. Each game asks questions to be answered correctly. Once three correct answers are given, the game ends. Incorrect answers end the game and prompt you to play it again. The games are:
+- **Calculator**: Calculate random arithmetic expressions
+- **Progression**: Find missing numbers in a number sequence
+- **Even Number**: Determine if a number is even
+- **GCD**: Determine the greatest common divisor
+- **Prime Number**: Determine if a number is prime
 
-Набор из пяти консольных игр, построенных по принципу популярных мобильных приложений для прокачки мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти ее заново.
+### Requirements
+You need to have [node.js](https://nodejs.org/en) installed. If it's not installed, use the [installation guide](https://github.com/Hexlet/ru-instructions/blob/main/nodejs.md). To check your node.js version, use the command `node -v`.
 
-### Игры
-- Калькулятор. Арифметические выражения, которые необходимо вычислить.
-- Прогрессия. Поиск пропущенных чисел в последовательности чисел.
-- Определение четного числа.
-- Определение наибольшего общего делителя.
-- Определение простого числа.
-
----
-
-### Требования
-
-Установленный  [node.js](https://nodejs.org/en)  версия 13.2.0 и выше (проверить версию установленной node возможно командой в терминале `node -v`)
-
-### Установка
-
-1. Клонируйте репозиторий с помощью следующей команды:
-
+### Installation and Preparing
+ 1. Clone the repository:
 ```
-git clone https://github.com/mxclg/frontend-project-44.git
+git clone https://github.com/mxclg/brain-games.git
+```
+2.	Navigate to the project directory
+```
+cd brain-games
+```
+3.	Install dependencies:
+```
+npm install
+```
+4.	Link the package locally:
+```
+npm link
 ```
 
-2. Далее выполните команду :
-
+### How to use
+Each game is launched with a separate command:
 ```
-sudo npm link
-```
-3. Каждая игра запускается отдельной командой:
-
-```
-brain-even
 brain-calc
-brain-gcd
 brain-progression
+brain-even
+brain-gcd
 brain-prime
 ```
----
-### Видео с демонстрацией каждой игры
 
-- Определение четного числа – [brain-even](https://asciinema.org/a/dsASN6m8mD2nDGTYhxPAUuXLB) 
-
-- Калькулятор – [brain-calc](https://asciinema.org/a/XwIsJuT583e8lbYh6cSJ45XJw) 
-
-- Определение наибольшего общего делителя – [brain-gcd](https://asciinema.org/a/eNmqSDXLhzWKtZ4lGPDgIpGrI) 
-
-- Прогрессия – [brain-progression](https://asciinema.org/a/MTyLAGlRhcWnQrUlqacjaR8yB)
-
-- Определение простого числа – [brain-prime](https://asciinema.org/a/7TrYSxdxIfb9O3PN5PejLt8n1)
+### Example
+```
+brain-progression
+Welcome to the Brain Game!
+What number is missing in the progression?
+May I have your name? Roman
+Hello, Roman!
+Question: 14 .. 18 20 22 24 26 28
+Your answer: 16 # User enters an answer
+Correct!
+Question: 5 6 7 8 9 .. 11 12
+Your answer: 10 # User enters an answer
+Correct!
+Question: 12 15 18 21 .. 27 30 33
+Your answer: 24 # User enters an answer
+Correct!
+Congratulations, Roman!
+```
+### Demonstration
+- **Calculator** – [`brain-calc`](https://asciinema.org/a/NOo5vTQSHSeiYQF7O93GXd7NU) 
+- **Progression** – [`brain-progression`](https://asciinema.org/a/aHTtPGadZpdGT8FHBNZf95MOa)
+- **Even Number** – [`brain-even`](https://asciinema.org/a/fKFuXtosvsBKrjqqNHtDiNJ8H) 
+- **Greatest common divisor** – [`brain-gcd`](https://asciinema.org/a/IzRoNOuDTHHDb6ZUquIOdIU4W) 
+- **Prime Number** – [`brain-prime`](https://asciinema.org/a/gO7KyA02JgoaxrFuJ0ZaFqZ70)
