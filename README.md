@@ -59,8 +59,8 @@ Correct!
 Congratulations, Roman!
 ```
 ### Demonstration
-- **Calculator** – [`brain-calc`](https://asciinema.org/a/NOo5vTQSHSeiYQF7O93GXd7NU) 
-- **Progression** – [`brain-progression`](https://asciinema.org/a/aHTtPGadZpdGT8FHBNZf95MOa)
-- **Even Number** – [`brain-even`](https://asciinema.org/a/fKFuXtosvsBKrjqqNHtDiNJ8H) 
-- **Greatest common divisor** – [`brain-gcd`](https://asciinema.org/a/IzRoNOuDTHHDb6ZUquIOdIU4W) 
-- **Prime Number** – [`brain-prime`](https://asciinema.org/a/gO7KyA02JgoaxrFuJ0ZaFqZ70)
+- Calculator – [`brain-calc`](https://asciinema.org/a/NOo5vTQSHSeiYQF7O93GXd7NU) 
+- Progression – [`brain-progression`](https://asciinema.org/a/aHTtPGadZpdGT8FHBNZf95MOa)
+- Even Number – [`brain-even`](https://asciinema.org/a/fKFuXtosvsBKrjqqNHtDiNJ8H) 
+- Greatest common divisor – [`brain-gcd`](https://asciinema.org/a/IzRoNOuDTHHDb6ZUquIOdIU4W) 
+- Prime Number – [`brain-prime`](https://asciinema.org/a/gO7KyA02JgoaxrFuJ0ZaFqZ70)
