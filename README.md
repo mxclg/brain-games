@@ -12,7 +12,7 @@ It's a set of five console games inspired by popular mobile brain-training apps.
 ### Requirements
 You need to have [node.js](https://nodejs.org/en) installed. If it's not installed, use the [installation guide](https://github.com/Hexlet/ru-instructions/blob/main/nodejs.md). To check your node.js version, use the command `node -v`.
 
-### Installation and Preparing
+### Installation and Setup
  1. Clone the repository:
 ```
 git clone https://github.com/mxclg/brain-games.git
@@ -25,13 +25,13 @@ cd brain-games
 ```
 npm install
 ```
-4.	Link the package locally:
+4.	Link the package locally to use the commands globally:
 ```
 npm link
 ```
 
 ### How to use
-Each game is launched with a separate command:
+After linking, you can launch each game with a command:
 ```
 brain-calc
 brain-progression
