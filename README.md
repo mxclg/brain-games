@@ -9,6 +9,12 @@ It's a set of five console games inspired by popular mobile brain-training apps.
 - **GCD**: Determine the greatest common divisor
 - **Prime Number**: Determine if a number is prime
 
+### Stack
+---
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=fff)
+![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=fff)
+
 ### Requirements
 You need to have [node.js](https://nodejs.org/en) installed. If it's not installed, use the [installation guide](https://github.com/Hexlet/ru-instructions/blob/main/nodejs.md). To check your node.js version, use the command `node -v`.
 
